@@ -9,6 +9,8 @@ const polialfabeto = {
 
 const inputTexto = document.querySelector("#texto");
 const inputRespuesta = document.querySelector("#cifrado");
+const clipboard = (document.querySelector(".clipboard").onclick =
+  writeClipboard);
 
 function cifrar() {
   let texto = inputTexto.value.toLowerCase();
@@ -53,4 +55,9 @@ function iterateEncryption(letter, num) {
   if (!found) rpta = letter;
 
   return rpta;
+}
+
+function writeClipboard() {
+  console.log(inputRespuesta.value);
+  navigator.clipboard.writeText(inputRespuesta.value);
 }

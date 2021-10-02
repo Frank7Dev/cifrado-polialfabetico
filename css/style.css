@@ -15,6 +15,11 @@ body {
   font-family: "Space Mono", monospace;
   color: rgb(73, 27, 6);
 }
+main {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1 {
   margin: 4rem 0 5rem;
   font-size: 3em;
@@ -27,7 +32,8 @@ input {
   font-family: "Space Mono", monospace;
 }
 input[type="text"] {
-  width: 50%;
+  /* width: 50%; */
+  width: 100%;
   height: 8em;
   border-radius: 10px;
 
@@ -46,4 +52,32 @@ input[type="button"] {
   font-size: 1.5em;
   font-weight: 700;
   cursor: pointer;
+}
+.output {
+  position: relative;
+}
+.clipboard {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  font-size: 1.2rem;
+  background-color: rgb(73, 27, 6);
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+.clipboard:hover {
+  color: #fff;
+  background-color: rgb(90, 32, 5);
+}
+.clipboard:active {
+  bottom: -17px;
 }

@@ -4,29 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/4872505e1c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Cifrado Polialfabético</title>
   </head>
   <body>
-    <h1>Cifrado Polialfabético</h1>
+    <main>
+      <h1>Cifrado Polialfabético</h1>
 
-    <input type="text" id="texto" placeholder="Ingrese el texto a Cifrar" />
+      <input type="text" id="texto" placeholder="Ingrese el texto a Cifrar" />
 
-    <input
-      type="button"
-      value="CIFRAR"
-      placeholder="Texto Cifrado"
-      onclick="cifrar()"
-    />
-
-    <input type="text" id="cifrado" placeholder="Texto Cifrado" />
-    <script src="js/script.js"></script>
+      <input
+        type="button"
+        value="CIFRAR"
+        placeholder="Texto Cifrado"
+        onclick="cifrar()"
+      />
+      <div class="output">
+        <input type="text" id="cifrado" placeholder="Texto Cifrado" />
+        <div class="clipboard">
+          <i class="fas fa-clipboard"></i>
+        </div>
+      </div>
+      <script src="js/script.js"></script>
+    </main>
   </body>
 </html>

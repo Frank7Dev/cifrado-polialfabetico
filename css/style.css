@@ -1,0 +1,49 @@
+/* My Work Styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Web Style */
+
+body {
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  color: rgb(73, 27, 6);
+}
+h1 {
+  margin: 4rem 0 5rem;
+  font-size: 3em;
+}
+input {
+  display: block;
+  margin: 0 auto 2rem;
+  border: 0 none transparent;
+
+  font-family: "Space Mono", monospace;
+}
+input[type="text"] {
+  width: 50%;
+  height: 8em;
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 1em;
+}
+input:focus {
+  outline: #ccc solid 2px;
+}
+input[type="button"] {
+  padding: 0.5em 2em;
+  border-radius: 6px;
+
+  background-color: rgb(73, 27, 6);
+  color: aliceblue;
+  font-size: 1.5em;
+  font-weight: 700;
+  cursor: pointer;
+}

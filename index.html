@@ -24,20 +24,24 @@
     <main>
       <h1>Cifrado Polialfabético</h1>
 
-      <input type="text" id="texto" placeholder="Ingrese el texto a Cifrar" />
+      <input type="text" id="one" placeholder="Ingrese el texto a Cifrar" />
 
-      <input
-        type="button"
-        value="CIFRAR"
-        placeholder="Texto Cifrado"
-        onclick="cifrar()"
-      />
+      <div class="content-cifrar">
+        <input id="button" type="button" value="CIFRAR" placeholder="Texto Cifrado" />
+
+        <div id="change">
+          <i class="fas fa-sync-alt"></i>
+        </div>
+      </div>
+
       <div class="output">
-        <input type="text" id="cifrado" placeholder="Texto Cifrado" />
+        <input type="text" id="two" placeholder="Texto Cifrado" />
         <div class="clipboard">
+          <div class="message-clipboard">Copiado!</div>
           <i class="fas fa-clipboard"></i>
         </div>
       </div>
+
       <script src="js/script.js"></script>
     </main>
   </body>

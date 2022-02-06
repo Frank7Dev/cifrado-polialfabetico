@@ -26,7 +26,6 @@ h1 {
 }
 input {
   display: block;
-  margin: 0 auto 2rem;
   border: 0 none transparent;
 
   font-family: "Space Mono", monospace;
@@ -43,6 +42,35 @@ input[type="text"] {
 input:focus {
   outline: #ccc solid 2px;
 }
+
+.content-cifrar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.content-cifrar #change {
+  position: absolute;
+  right: 0;
+  width: 2.6rem; height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.content-cifrar #change:hover {
+  border: 2px solid rgb(73, 27, 6);
+  color: rgb(73, 27, 6);
+  background-color: rgba(196, 87, 47, 0.1);
+}
+
 input[type="button"] {
   padding: 0.5em 2em;
   border-radius: 6px;
@@ -74,6 +102,35 @@ input[type="button"] {
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s;
 }
+.message-clipboard {
+  position: absolute;
+  top: -30px;
+  padding: .4rem .8rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .2);
+  color: rgba(0, 0, 0, .8);
+  font-size: .9rem;
+  opacity: 0;
+}
+.message-clipboard.animate {
+  animation: fade 1s linear;
+}
+@keyframes fade {
+  0% {
+    top: -40px;
+    opacity: 0;
+  }
+  50% {
+    top: -50px;
+    opacity: 1;
+  }
+  100% {
+    top: -60px;
+    opacity: 0;
+  }
+}
+
+.clipboard > i { margin-bottom: 3px; }
 .clipboard:hover {
   color: #fff;
   background-color: rgb(90, 32, 5);
